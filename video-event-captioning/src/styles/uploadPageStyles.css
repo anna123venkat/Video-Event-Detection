@@ -1,0 +1,108 @@
+body {
+    background-color: #1f1f1f; /* Dark tone */
+    color: #fff; /* Light tone */
+}
+
+.upload-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+/* Adjust placeholder color for input */
+.upload-section .ant-input::placeholder {
+    color: #ccc; /* Light gray tone */
+}
+
+/* Adjust text color for buttons */
+.upload-section .ant-btn,
+.upload-section .ant-input-search-button {
+    color: #fff; /* Light tone */
+}
+
+.upload-section .ant-btn {
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+
+.upload-section .ant-btn:hover, .upload-section .ant-btn:focus {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.upload-section .ant-input {
+    background-color: #333;
+    color: #fff;
+}
+
+.result-section {
+    margin-bottom: 30px;
+}
+
+.result-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Add this CSS to automatically resize the text box */
+.generated-text {
+    background-color: #333;
+    color: #fff;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Set a minimum height */
+    max-height: 400px; /* Set a maximum height */
+    overflow-y: auto; /* Add vertical scrollbar when content exceeds the height */
+}
+
+
+.video-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.generated-text:hover,
+.generated-text:focus {
+    background-color: #333 !important; /* Ensure specificity */
+    color: #fff !important; /* Ensure specificity */
+}
+
+/* Add styles for uploaded video */
+.video-section {
+    margin-bottom: 30px;
+}
+
+.video-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the video element */
+.video-section video {
+    width: 100%; /* Set video width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the video is displayed as a block element */
+    margin: 0 auto; /* Center the video horizontally */
+}
+
+/* Style the video container */
+.video-container {
+    max-width: 800px; /* Set maximum width for the video container */
+    margin: 0 auto; /* Center the video container horizontally */
+}

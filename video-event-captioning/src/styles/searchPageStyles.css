@@ -1,0 +1,36 @@
+body {
+    background-color: #1f1f1f; /* Dark tone */
+    color: #fff; /* Light tone */
+    position: relative; /* Ensure positioning context for absolute positioning */
+}
+
+.search-page-button {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1; /* Ensure button appears above other elements */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.video-item {
+    width: 100%;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Additional style for the search input box */
+.search-page-input {
+    width: 500px; /* Adjust the width as needed */
+    margin-bottom: 10px; /* Add some bottom margin */
+}
